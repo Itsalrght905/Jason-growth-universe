@@ -1,0 +1,1 @@
+import {readings} from '../data/reading';export default function ReadingCastle({age}){return <><div className="page-intro pink-bg"><span>🏰</span><p className="eyebrow">阅读城堡</p><h1>打开今天的小故事</h1></div><article className="story"><span>📖</span><p>{readings[Number(age)]}</p><div>🌟 慢慢读一遍，再说说你发现了什么吧！</div></article></>}

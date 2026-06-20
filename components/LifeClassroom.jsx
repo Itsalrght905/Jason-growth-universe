@@ -1,0 +1,1 @@
+import {lessons} from '../data/lifeLessons';export default function LifeClassroom(){return <><div className="page-intro green-bg"><span>🌱</span><p className="eyebrow">生活小课堂</p><h1>生活本领收集站</h1></div><div className="lesson-list">{lessons.map(([icon,title,text])=><article key={title}><span>{icon}</span><div><h2>{title}</h2><p>{text}</p></div></article>)}</div></>}

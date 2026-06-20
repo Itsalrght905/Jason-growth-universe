@@ -1,0 +1,1 @@
+export const words={5:[['cat','小猫','🐱'],['red','红色','🔴'],['apple','苹果','🍎']],6:[['mother','妈妈','👩'],['hand','手','✋'],['book','书','📘']],7:[['I like stars.','我喜欢星星。','⭐']],8:[['The rabbit is under the tree.','兔子在树下。','🐰🌳']],9:[['The fox reads every night.','狐狸每晚都阅读。','🦊📖']],10:[['Planning helps us use time wisely.','规划帮助我们明智地利用时间。','🗓️']]}

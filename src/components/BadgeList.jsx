@@ -1,0 +1,1 @@
+import {allBadges} from '../data/badges';export default function BadgeList({badges}){return <div className="badges">{allBadges.map(b=><div className={badges.includes(b)?'earned':''} key={b}><span>{badges.includes(b)?'🏅':'🔒'}</span><small>{b}</small></div>)}</div>}

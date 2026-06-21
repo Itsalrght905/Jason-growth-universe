@@ -1,3 +1,3 @@
-const navItems=[['home','🏠','首页'],['today','✅','今日任务'],['map','🪐','星球地图'],['story','🌙','故事屋'],['growth','🌱','我的成长'],['settings','👩','家长']]
+const navItems=[['home','🏠','首页'],['today','✅','今日任务'],['story','🌙','故事屋'],['jokes','🐧','笑一下'],['growth','🌱','我的成长'],['settings','👩','家长']]
 
 export default function Layout({children,page,navigate}){return <div className="app-shell"><header className="topbar"><button className="brand-button" onClick={()=>navigate('home')} aria-label="返回首页"><span>🪐</span><div><strong>成长小宇宙</strong><small>孩子学知识，妈妈陪成长</small></div></button><span className="sparkle" aria-hidden="true">✨</span></header><main>{children}</main><nav className="bottom-nav" aria-label="主要导航">{navItems.map(([id,icon,label])=><button key={id} className={page===id?'active':''} onClick={()=>navigate(id)} aria-label={label}><span aria-hidden="true">{icon}</span><small>{label}</small></button>)}</nav><footer>学习记录只保存在这台设备上，不会上传到网络。</footer></div>}
